@@ -45,6 +45,9 @@ body {
     text-decoration: none;
     border-bottom:3px solid #549740;
 }
+#menu ul li button {
+    margin-left: 730px;
+}
 #menu {
     position: sticky;
     top: 0;
@@ -74,3 +77,4 @@ footer {
 ul{
     margin-left: 35px;
 }
+
