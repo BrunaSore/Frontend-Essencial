@@ -17,28 +17,39 @@
         <form method="GET" action=".">
             <h1>Cadastro</h1>
 
-            <label>Nome:</label><br/>
-            <input id="nome" required="required" type="text" placeholder="Nome" /><br/>
+            <label for="nome">Nome:</label><br/>
+            <input id="nome" type="text" placeholder="Nome" /><br/>
 
-            <label>E-mail:</label><br/>
-            <input id="email" required="required" type="email" placeholder="Contato@email.com" /><br/>
+            <label for="sobrenome">Sobreome:</label><br/>
+            <input id="sobrenome" type="text" placeholder="Sobrenome" /><br/>
 
-            <label>Senha:</label><br/>
-            <input id="senha" name="senha_cad" required="required" type="password" placeholder="Senha" /><br/>
+            <label for="sexo">Sexo:</label><br/>
+            <select name="sexo" id="sexo">
+              <option value="">Selecione uma opção</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="x">Não informar</option>
+            </select><br/>
 
-            <label>Cep:</label><br/>
-            <input name="cep" type="text" id="cep" required="required" value="" maxlength="8" onblur="pesquisacep(this.value);" /><br />
+            <label for="sexo">E-mail:</label><br/>
+            <input id="email" type="email" placeholder="Contato@email.com" /><br/>
 
-            <label>Rua:</label><br/>
-            <input name="rua" type="text" id="rua" required="required" /><br />
+            <label for="senha">Senha:</label><br/>
+            <input id="senha" name="senha_cad" type="password" placeholder="Senha" /><br/>
 
-            <label>Bairro:</label><br/>
-            <input name="bairro" type="text" id="bairro" required="required" /><br />
+            <label for="cep">Cep:</label><br/>
+            <input name="cep" type="text" id="cep" value="" maxlength="8" placeholder="12345678" onblur="pesquisacep(this.value);" /><br />
 
-            <label>Cidade:</label><br/>
-            <input name="cidade" type="text" id="cidade" required="required" /><br />
+            <label for="rua">Rua:</label><br/>
+            <input name="rua" type="text" id="rua" /><br />
 
-            <label>Estado:</label><br/>
+            <label for="bairro">Bairro:</label><br/>
+            <input name="bairro" type="text" id="bairro" /><br />
+
+            <label for="cidade">Cidade:</label><br/>
+            <input name="cidade" type="text" id="cidade" /><br />
+
+            <label for="estado">Estado:</label><br/>
             <select id="uf" required="required">
               <option value="">Selecione um estado</option>
               <option value="AC">Acre</option>
@@ -68,9 +79,10 @@
               <option value="SP">São Paulo</option>
               <option value="SE">Sergipe</option>
               <option value="TO">Tocantins</option>
-            </select>
+            </select><br/>
             <br class="Cadastrar" />
-            <input type="submit" value="Cadastrar" />
+
+            <button type="button" class="botao" onclick="validar()">Cadastrar</button> <br/>
             <br class="link"> Já tem conta?
             <a href="Login.html"> Ir para Login </a>
         </form>

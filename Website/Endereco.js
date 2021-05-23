@@ -4,7 +4,7 @@ function limpa_formulário_cep() {
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
     document.getElementById('uf').value = ("");
-}
+};
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
@@ -19,7 +19,7 @@ function meu_callback(conteudo) {
         limpa_formulário_cep();
         alert("CEP não encontrado.");
     }
-}
+};
 
 function pesquisacep(valor) {
 
@@ -36,10 +36,10 @@ function pesquisacep(valor) {
         if (validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementById('rua').value = "...";
-            document.getElementById('bairro').value = "...";
-            document.getElementById('cidade').value = "...";
-            document.getElementById('uf').value = "...";
+            document.getElementById('rua').value = "Buscando";
+            document.getElementById('bairro').value = "Buscando";
+            document.getElementById('cidade').value = "Buscando";
+            document.getElementById('uf').value = "Buscando";
 
             //Cria um elemento javascript.
             var script = document.createElement('script');
@@ -62,3 +62,77 @@ function pesquisacep(valor) {
         limpa_formulário_cep();
     }
 };
+
+function validar() {
+    // pegando o valor do nome pelos names
+    var nome = document.getElementById("nome");
+    var sobrenome = document.getElementById("sobrenome");
+    var sexo = document.getElementById("sexo");
+    var email = document.getElementById("email");
+    var senha = document.getElementById("senha");
+    var cep = document.getElementById("cep");
+
+    // verificar se o nome está vazio
+    if (nome.value == "") {
+        alert("Nome não informado");
+
+        // Deixa o input com o focus
+        nome.focus();
+        // retorna a função e não olha as outras linhas
+        return;
+    }
+    if (sobrenome.value == "") {
+        alert("Sobrenome não informado");
+        sobrenome.focus();
+        return;
+    }
+    if (sexo.value == "") {
+        alert("sexo não informado");
+        sexo.focus();
+        return;
+    }
+    if (email.value == "") {
+        alert("E-mail não informado");
+        email.focus();
+        return;
+    }
+    if (senha.value == "") {
+        alert("Senha não informada");
+        senha.focus();
+        return;
+    }
+    if (cep.value == "") {
+        alert("CEP não informado");
+        cep.focus();
+        return;
+    }
+    alert("Formulário enviado!");
+};
+
+function verificar() {
+    var email = document.getElementById("email_log");
+    var senha = document.getElementById("senha_log");
+
+    // verificar se o nome está vazio
+
+    if (email.value == "") {
+        alert("E-mail invalido");
+        email.focus();
+        return;
+    }
+    if (senha.value == "") {
+        alert("Senha invalida");
+        senha.focus();
+        return;
+    }
+
+};
+
+function showsenha() {
+    var x = document.getElementById("senha");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}

@@ -5,6 +5,7 @@
     <title>Formulário de Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="Endereco.js" />
 </head>
 
 <body>
@@ -17,32 +18,23 @@
             <div id="login">
                 <form method="post" action="">
                     <h1>Login</h1>
-                    <p>
-                        <label for="nome_login">Seu nome</label>
-                        <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com" />
-                    </p>
+                    <br/>
+                    <label>E-mail</label><br/>
+                    <input id="email_log" name="email" type="text" placeholder="Email" /><br/>
 
-                    <p>
-                        <label for="email_login">Seu e-mail</label>
-                        <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" />
-                    </p>
+                    <label>Senha</label><br/>
+                    <input id="senha_log" name="senha_login" type="password" placeholder="Senha" /><br/>
 
-                    <p>
-                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
-                        <label for="manterlogado">Manter-me logado</label>
-                    </p>
+                    <br/><button type="button" class="botao" onclick="verificar()">log in</button> <br/>
 
-                    <p>
-                        <input type="submit" value="Logar" />
-                    </p>
 
-                    <p class="link">
-                        Ainda não tem conta?
-                        <a href="Cadastro.html">Cadastre-se</a>
-                    </p>
+                    <br class="link" /> Ainda não tem conta?
+                    <a href="Cadastro.html">Cadastre-se</a>
+                    <br/>
                 </form>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
