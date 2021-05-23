@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8" />
-    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Login</title>
+
+    <style rel="stylesheet">
+        header {
+            background-image: url("futebol.jpg");
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
+    <nav id="menu">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="FaleConosco.html">Fale conosco</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header class="sos">
+        <h1>Funcional Soccer Performance</h1>
+        <h2>Para jovens atletas amadores.</h2>
+
+    </header>
     <div class="container">
+    
         <a class="links" id="paracadastro"></a>
         <a class="links" id="paralogin"></a>
 
         <div class="content">
             <!--FORMULÁRIO DE LOGIN-->
             <div id="login">
+              
                 <form method="post" action="">
-                    <h1>Login</h1>
                     <p>
                         <label for="nome_login">Seu nome</label>
-                        <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com" />
+                        <input id="nome_login" name="nome_login" required="required" type="text"
+                            placeholder="ex. contato@htmlecsspro.com" />
                     </p>
 
                     <p>
                         <label for="email_login">Seu e-mail</label>
-                        <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" />
+                        <input id="email_login" name="email_login" required="required" type="password"
+                            placeholder="ex. senha" />
                     </p>
 
                     <p>

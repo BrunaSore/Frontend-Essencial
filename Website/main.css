@@ -1,30 +1,34 @@
-div.row {
-    background-color: rgb(252, 240, 223);
+div.row{
+    background-color: rgb(245, 243, 243);
+    margin: 0;
+    padding: 0;
+}
+div.cadastro{
+    background-color: rgb(245, 243, 243);
     margin: 0;
 }
-
-aside {
+div.content{
+    background-color: rgb(245, 243, 243);
+    margin: 0;
+}
+aside{
     background-color: rgb(98, 180, 98);
-    padding: 1%;
+    padding: 5%;
     margin: 0;
 }
-
-.sos {
+.sos{
     text-align: center;
     margin: 0;
     padding: 8%;
     color: black;
-    text-shadow: 2px 1px rgb(253, 247, 247);
+    text-shadow: 2px 1px  rgb(253, 247, 247);
 }
-
-.sos h2 {
+.sos h2{
     font-weight: normal;
 }
-
-body h3 {
+body h3{
     text-align: center;
 }
-
 body {
     width: 100%;
     max-width: 100%;
@@ -33,64 +37,55 @@ body {
     font-size: 15px;
     line-height: 1.5;
     font-family: "Arial";
-}
-
+    
+  }
 #menu ul li {
     display: inline-block;
-}
-
+  }
 #menu ul li a {
     display: block;
-    color: #FFFFFF;
+    color: #57b86f;
     padding: 7px 50px;
-    /* visual do link */
-    background-color: rgb(98, 180, 98);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    border-bottom: 3px solid #549740;
-}
 
+    /* visual do link */
+    background-color:#57b86f;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-bottom:3px solid #549740;
+}
 #menu {
     position: sticky;
     top: 0;
 }
-
 #menu ul {
-    margin: 0px;
-    background-color: rgb(98, 180, 98);
-    list-style: none;
-    color: white;
+    margin:0px;
+    background-color:#57b86f;
+    list-style:none;
 }
-
 #menu ul li a:hover {
-    background-color: #79b679;
+    background-color:#90c290;
     color: #fcf9fd;
     border-bottom: 1px solid #238f32;
 }
-
-p {
+p{
     color: rgb(0, 0, 0);
     margin-left: 20px;
     margin: 0;
     text-indent: 3em;
-}
 
+}
 footer {
-    background-color: rgb(98, 180, 98);
-    padding: 0%;
+    background-color: #589253;
+    padding: 5%;
     text-align: center;
 }
-
-footer p {
-    color: white;
-}
-
-ul {
+ul{
     margin-left: 35px;
 }
 
+
 table tr {
-    background-color: rgb(98, 180, 98);
+    background-color: #589253;
     color: white;
 }
 table tr td a{
@@ -99,7 +94,7 @@ table tr td a{
 
 table {
     width: 300px;
-    border: rgb(98, 180, 98);
+    border:#589253;
 }
 table tr td a{
     color: #FFFFFF;
@@ -107,9 +102,9 @@ table tr td a{
 
 /* Sobre */
 
-.conteiner-fluid {
-    padding: 0;
-    height: 70%;
+div.conteiner-fluid {
+    margin:0;
+    padding: 0%;
 }
 
 #centro {
@@ -120,4 +115,8 @@ table tr td a{
 #cent {
     text-align: justify;
     height: 600px;
+}
+
+div.carouselExampleControls{
+    margin: 0;
 }
