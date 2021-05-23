@@ -116,3 +116,19 @@ table {
     text-align: justify;
     height: 600px;
 }
+
+
+/* Fale Conosco */
+
+#corpo {
+    background-image: url(futfale.jpg);
+    padding: 0;
+}
+
+#corLetra {
+    color: rgb(255, 255, 255);
+}
+
+#corEnviar {
+    color: black;
+}

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Teste Fale conosco</title>
+    <title>Fale conosco</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -23,19 +23,21 @@
                 <li><a href="Cadastro.html">Cadastre-se</a></li>
             </ul>
     </div>
-    <br><br>
 
-    <h1>Fale Conosco</h1><br><br>
-    <form method="POST" action="processa.php">
-        <label>Nome</label>
-        <input type="text" name="nome" placeholder="Nome Completo"><br><br>
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Email Principal"><br><br>
-        <label>Digite sua Mensagem</label><br>
-        <textarea name="mensagem" rows="4" cols="50"></textarea><br><br>
-        <input type="submit" value="Enviar"><br><br><br><br><br>
-    </form>
-
+    <div class="row" id="corpo">
+        <div><br>
+            <h1 id="corLetra"><strong><i>Fale Conosco</i></strong></h1><br><br>
+            <form method="POST" action="processa.php">
+                <label id="corLetra"><h5>Nome</h5></label><br>
+                <input type="text" name="nome" placeholder="Nome Completo"><br><br>
+                <label id="corLetra"><h5>Email<h5></label>
+                <input type="email" name="email" placeholder="Email Principal"><br><br>
+                <label id="corLetra"><h5>Digite sua Mensagem</h5></label><br>
+                <textarea name="mensagem" placeholder="Digite sua mensagem" rows="4" cols="50"></textarea><br><br>
+                <input id="corEnviar" type="submit" value="Enviar"><br><br><br><br><br><br>
+            </form>
+        </div>
+    </div>
     <div class="row">
 
         <footer>
@@ -45,9 +47,10 @@
             <br>
             <table border="1">
                 <tr>
-                    <td>Sobre nós</td>
-                    <td>Instagram<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_Instagram" height="20" width="20"></td>
-                    <td>Fale Conosco</td>
+                    <td>
+                        <td>LinkedIn<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_LinkedIn" height="20" width="20"></td>
+                        <td>Instagram<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_Instagram" height="20" width="20"></td>
+                        <td>Facebook<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_Facebook" height="20" width="20"></td>
                 </tr>
             </table>​​​
             </section>
