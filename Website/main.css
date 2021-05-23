@@ -81,6 +81,38 @@ footer {
     text-align: center;
 }
 
+footer p {
+    color: white;
+}
+
 ul {
     margin-left: 35px;
+}
+
+table tr {
+    background-color: rgb(98, 180, 98);
+    color: white;
+}
+
+table {
+    width: 300px;
+    border: rgb(98, 180, 98);
+}
+
+
+/* Sobre */
+
+.conteiner-fluid {
+    padding: 0;
+    height: 70%;
+}
+
+#centro {
+    text-align: center;
+    height: 100px;
+}
+
+#cent {
+    text-align: justify;
+    height: 600px;
 }

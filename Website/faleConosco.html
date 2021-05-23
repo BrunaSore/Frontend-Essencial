@@ -1,77 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <!--<link rel="stylesheet" href="D:\Anna Luiza\Front-End\CSS\Trabalho_Final_Home.css">-->
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    
-
-
-    <title>FSPerformance</title>
-    <style rel="stylesheet">
-        header {
-            background-image: url("futebol.jpg");
-            background-position: center;
-        }
-    </style>
+    <title>Teste Fale conosco</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Sobre.html">Sobre</a></li>
-            <li><a href="FaleConosco.html">Fale conosco</a></li>
-        </ul>
-    </nav>
-    <header class="sos">
-        <h1>Funcional Soccer Performance</h1>
-        <h2>Para jovens atletas amadores.</h2>
 
+    <div class="row">
+        <nav id="menu">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="FaleConosco.html">Fale conosco</a></li>
+                <li><a href="Cadastro.html">Cadastre-se</a></li>
+            </ul>
+    </div>
+    <br><br>
 
-    </header>
+    <h1>Fale Conosco</h1><br><br>
+    <form method="POST" action="processa.php">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Nome Completo"><br><br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email Principal"><br><br>
+        <label>Digite sua Mensagem</label><br>
+        <textarea name="mensagem" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Enviar"><br><br><br><br><br>
+    </form>
 
-    <div id="Fale_Conosco">
-        <p>Esta tendo problemas? Ligue: 2245-1447</p>
-        <p>E-mail para suporte: annalubarillo@gmail.com</p>
+    <div class="row">
 
-    </div><br>
-    <footer class="sos2">
-        <!--$(document).ready(function() {       BOTÃO BACK TO TOP
-                $('#subir').click(function(){
-                    $('html, body').animate({scrollTop:0}, 'slow');
-                    return false;
-                });
-            });
-    
-            table {border: none;}
-            table {border-collapse: collapse;}-->
-        <!--<style>
-          .tab {border-collapse:collapse;}
-          .tab .first {border-bottom:1px solid #EEE;}
-          .tab .second {border-top:1px solid #CCC;box-shadow: inset 0 1px 0 #CCC;}​
-          </style>-->
+        <footer>
+            <p>© 2021 Funcional Soccer Performance</p>
 
-        <table border="1">
-            <tr>
-                <td>Mapa do Site</td>
-                <td>Rede Sociais</td>
-                <td>Precisa de Ajuda?</td>
-            </tr>
-            <tr>
-                <td><a href="D:/Anna Luiza/Front-End/Trabalho_Final_Sobre.html">Sobre Nós</a></td>
-                <td><a href="#">Instagram</a><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
-                        alt="Logo_Instagram" height="20" width="20"></td>
-                <td><a href="D:/Anna Luiza/Front-End/Trabalho_Final_Fale_Conosco.html">Fale Conosco</a></td>
-            </tr>
-        </table>​​​
-        </section>
-        <p>© 2021 Funcional Soccer Performance</p>
-    </footer>
+            <p> © Copyright</p>
+            <br>
+            <table border="1">
+                <tr>
+                    <td>Sobre nós</td>
+                    <td>Instagram<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_Instagram" height="20" width="20"></td>
+                    <td>Fale Conosco</td>
+                </tr>
+            </table>​​​
+            </section>
+        </footer>
+    </div>
+
 
 </body>
 

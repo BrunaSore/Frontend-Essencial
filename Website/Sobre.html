@@ -1,74 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <!--<link rel="stylesheet" href="D:\Anna Luiza\Front-End\CSS\Trabalho_Final_Home.css">-->
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-   
-    <title>FSPerformance</title>
-    <style rel="stylesheet">
-        header {
-            background-image: url("futebol.jpg");
-            background-position: center;
-        }
-    </style>
+    <title>Teste Sobre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Sobre.html">Sobre</a></li>
-            <li><a href="FaleConosco.html">Fale conosco</a></li>
-        </ul>
-    </nav>
-    <header class="sos">
-        <h1>Funcional Soccer Performance</h1>
-        <h2>Para jovens atletas amadores.</h2>
-
-
-    </header>
-
-    <p>Motivado em fazer um trabalho inovador, a Funcional soccer Performance,visa trabalhar a parte física do
-        atleta,tendo um papel importante no seu rendimento e desempenho dentro de seus jogos.</p>
-    <p>A nossa missão é desenvolver as capacidades físicas (coordenativas e condicionantes) dos jovens atletas
-        amadores. Proporcionando, a eles um físico ideal e uma condição real para conseguir adentrar em um clube
-        renomado de futebol nas categorias
-        de base.</p><br>
-    <footer class="sos2">
-        <!--$(document).ready(function() {       BOTÃO BACK TO TOP
-                $('#subir').click(function(){
-                    $('html, body').animate({scrollTop:0}, 'slow');
-                    return false;
-                });
-            });
-    
-            table {border: none;}
-            table {border-collapse: collapse;}-->
-        <!--<style>
-          .tab {border-collapse:collapse;}
-          .tab .first {border-bottom:1px solid #EEE;}
-          .tab .second {border-top:1px solid #CCC;box-shadow: inset 0 1px 0 #CCC;}​
-          </style>-->
+    <div class="row">
+        <nav id="menu">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="FaleConosco.html">Fale conosco</a></li>
+                <li><a href="Cadastro.html">Cadastre-se</a></li>
+            </ul>
+    </div>
+    <!-- Inicio Slider -->
+    <div class="conteiner-fluid">
+        <div class="row">
+            <figure>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="futfut.jpg" class="d-block w-100" style="width:100%;height: 100%" alt="alura">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="centro">Quem somos</h2>
+                                <p>
+                                    <h3 id="cent">O diferencial de mercado é ser uma empresa voltada para o trabalho funcional voltado somente ao futebol, onde mais se prepara jovens atletas de futebol, nos times de base profissionais no estado do Rio de Janeiro. Capacitando
+                                        atletas dentro de campo.</h3>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="futcamp.jpg" class="d-block w-100" style="width:100%;height: 100%" alt="caelum">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="centro">Missão</h2>
+                                <p>
+                                    <h3 id="cent">A nossa missão é desenvolver as capacidades físicas - coordenativas e condicionantes - dos jovens atletas amadores. Proporcionando, a eles um físico ideal e uma condição real para conseguir adentrar em um clube renomado
+                                        de futebol nas categorias de base.</h3>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="futnight.jpg" class="d-block w-100" style="width:100%;height: 100%" alt="casa do código">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 id="centro">Junte-se ao nosso Time</h2>
+                                <p>
+                                    <h3 id="cent">Venha conhecer nosso time e fazer parte dele, faça um teste sem compromisso com nossa equipe técnica. Clique
+                                        <a href="#">aqui</a> e cadastre-se!
+                                        <h3>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+        </div>
+    </div>
+    </figure>
+    <!-- Fim Slider -->
+    <footer>
+        <p>© 2021 Funcional Soccer Performance</p>
+        </div>
+        <p> © Copyright</p>
+        <br>
         <table border="1">
             <tr>
-                <td>Mapa do Site </td>
-                <td>Rede Sociais </td>
-                <td>Precisa de Ajuda? </td>
-            </tr>
-            <tr>
-                <td>Sobre Nós</td>
-                <td>Instagram<img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
-                        alt="Logo_Instagram" height="20" width="20"></td>
+                <td>Sobre nós</td>
+                <td>Instagram<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Logo_Instagram" height="20" width="20"></td>
                 <td>Fale Conosco</td>
             </tr>
         </table>​​​
         </section>
-        <p>© 2021 Funcional Soccer Performance</p>
     </footer>
 
 </body>
