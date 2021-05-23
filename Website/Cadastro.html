@@ -1,44 +1,80 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Formulário de Cadastro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-  <div class="container" >
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-     
-    <div class="content">      
-<div id="cadastro">
-    <form method="post" action=""> 
-      <h1>Cadastro</h1> 
-       
-      <p> 
-        <label for="nome_cad">Seu nome</label>
-        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-      </p>
-       
-      <p> 
-        <label for="email_cad">Seu e-mail</label>
-        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-      </p>
-       
-      <p> 
-        <label for="senha_cad">Sua senha</label>
-        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-      </p>
-       
-      <p> 
-        <input type="submit" value="Cadastrar"/> 
-      </p>
-       
-      <p class="link">  
-        Já tem conta?
-        <a href="Login.html"> Ir para Login </a>
-      </p>
+<html>
 
-    </form>
-  </div>
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Endereco.js" />
+
+</head>
+
+<body>
+
+    <div id="cadastro">
+        <form method="GET" action=".">
+            <h1>Cadastro</h1>
+
+            <label>Nome:</label><br/>
+            <input id="nome" required="required" type="text" placeholder="Nome" /><br/>
+
+            <label>E-mail:</label><br/>
+            <input id="email" required="required" type="email" placeholder="Contato@email.com" /><br/>
+
+            <label>Senha:</label><br/>
+            <input id="senha" name="senha_cad" required="required" type="password" placeholder="Senha" /><br/>
+
+            <label>Cep:</label><br/>
+            <input name="cep" type="text" id="cep" required="required" value="" maxlength="8" onblur="pesquisacep(this.value);" /><br />
+
+            <label>Rua:</label><br/>
+            <input name="rua" type="text" id="rua" required="required" /><br />
+
+            <label>Bairro:</label><br/>
+            <input name="bairro" type="text" id="bairro" required="required" /><br />
+
+            <label>Cidade:</label><br/>
+            <input name="cidade" type="text" id="cidade" required="required" /><br />
+
+            <label>Estado:</label><br/>
+            <select id="uf" required="required">
+              <option value="">Selecione um estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+            <br class="Cadastrar" />
+            <input type="submit" value="Cadastrar" />
+            <br class="link"> Já tem conta?
+            <a href="Login.html"> Ir para Login </a>
+        </form>
     </div>
+</body>
+
+</html>
