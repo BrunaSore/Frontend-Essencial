@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta http-equiv="Content-Type" content="text/html" />
-    <link href=" Endereco.js" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src=" Endereco.js"></script>
 
     <title>Formulário de Cadastro</title>
     <style>
@@ -30,60 +31,89 @@
         </ul>
     </nav>
 
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3" method="POST">
         <div class="col-md-4 position-relative"><br><br>
             <label for="validationTooltip01" class="form-label">Primeiro Nome</label>
-            <input type="text" class="form-control" id="validationTooltip01" value="" required>
-            <div class="valid-tooltip">
-                oK
-            </div>
+            <input type="text" class="form-control" id="nome" value="" required>
         </div>
         <div class="col-md-4 position-relative"><br><br>
             <label for="validationTooltip02" class="form-label">Último Nome</label>
-            <input type="text" class="form-control" id="validationTooltip02" value="" required>
-            <div class="valid-tooltip">
-                ok
-            </div>
+            <input type="text" class="form-control" id="sobrenome" value="" required>
         </div>
         <div class="col-md-4 position-relative"><br><br>
             <label for="validationTooltipUsername" class="form-label">Nome de Usuário</label>
             <div class="input-group has-validation">
                 <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                <div class="invalid-tooltip">
-                    Por favor informe um nome de usuário válido.
-                </div>
+                <input type="text" class="form-control" id="usuario" required>
             </div>
+        </div>
+        <div class="col-md-3 position-relative">
+            <label for="cep" class="form-label">Cep</label>
+            <input type="text" class="form-control" id="cep" required>
+        </div>
         </div>
         <div class="col-md-6 position-relative">
-            <label for="validationTooltip03" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="validationTooltip03" required>
-            <div class="invalid-tooltip">
-                Por favor informe uma cidade válida.
-            </div>
+            <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="cidade" required>
         </div>
         <div class="col-md-3 position-relative">
-            <label for="validationTooltip04" class="form-label">Estado</label>
-            <select class="form-select" id="validationTooltip04" required>
-        <option selected disabled value="">Escolha</option>
-        <option>Rio de Janeiro</option>
-        <option>São Paulo</option>
-        <option>Minas Gerais</option>
-        <option>Quinto dos Infernos</option>
+            <label for="uf" class="form-label">Estado</label>
+            <select class="form-select" id="uf" required>
+            <option selected disabled value="">Escolha</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
       </select>
-            <div class="invalid-tooltip">
-                Por favor escolha um estado válido.
-            </div>
         </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationTooltip05" required>
-            <div class="invalid-tooltip">
-                Por favor informe um CEP válido.
-            </div>
-        </div>
+        <script type="text/javascript">
+            $("#cep").focusout(function() {
+
+                $.ajax({
+
+                    url: 'https://viacep.com.br/ws/' + $(this).val() + '/json/unicode/',
+
+                    dataType: 'json',
+
+                    success: function(resposta) {
+
+                        $("#logradouro").val(resposta.logradouro);
+                        $("#complemento").val(resposta.complemento);
+                        $("#bairro").val(resposta.bairro);
+                        $("#cidade").val(resposta.localidade);
+                        $("#uf").val(resposta.uf);
+
+                        $("#numero").focus();
+                    }
+                });
+            });
+        </script>
+
         <div class="col-12">
-            <button class="btn btn-primary" type="submit">Acessar</button>
+            <button class="btn btn-primary" type="submit" ref="#" onclick="validar()">Acessar</button>
             <br><br><br><br><br><br><br><br>
         </div>
     </form>
