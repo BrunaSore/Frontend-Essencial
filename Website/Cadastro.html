@@ -35,7 +35,9 @@
             <input id="email" type="email" placeholder="Contato@email.com" /><br/>
 
             <label for="senha">Senha:</label><br/>
-            <input id="senha" name="senha_cad" type="password" placeholder="Senha" /><br/>
+            <input id="senha" name="senha_cad" type="password" placeholder="Senha" />
+            <input type="checkbox" nome="show" id="senha_cad" onclick="showsenha()" />
+            <label for="show">mostrar senha</label><br><br/>
 
             <label for="cep">Cep:</label><br/>
             <input name="cep" type="text" id="cep" value="" maxlength="8" placeholder="12345678" onblur="pesquisacep(this.value);" /><br />

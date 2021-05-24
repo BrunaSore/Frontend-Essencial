@@ -69,7 +69,7 @@ function validar() {
     var sobrenome = document.getElementById("sobrenome");
     var sexo = document.getElementById("sexo");
     var email = document.getElementById("email");
-    var senha = document.getElementById("senha");
+    var senha = document.getElementById("senha_cad");
     var cep = document.getElementById("cep");
 
     // verificar se o nome está vazio
@@ -128,11 +128,22 @@ function verificar() {
 
 };
 
-function showsenha() {
-    var x = document.getElementById("senha");
+function showsenhacad() {
+    var x = document.getElementById("senha_cad");
+
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
+    }
+
+}
+
+function showsenhalog() {
+    var y = document.getElementById("senha_log");
+    if (y.type === "password") {
+        y.type = "text";
+    } else {
+        y.type = "password";
     }
 }
