@@ -1,66 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="main.css">
+    <title>Formulário de Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="acesso.js"></script>
 
-    <title>Login</title>
-
-    <style rel="stylesheet">
-        header {
-            background-image: url("futebol.jpg");
-            background-position: center;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(futrede.jpg);
+        }
+        
+        #tela {
+            background-color: rgb(64, 64, 66);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+            width: 40%;
+        }
+        
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        #botao {
+            width: 24%;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        
+        #botao:hover {
+            background-color: rgb(161, 165, 162);
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
         }
     </style>
+
+
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Sobre.html">Sobre</a></li>
-            <li><a href="FaleConosco.html">Fale conosco</a></li>
-            <li><a href="Login.html">Login</a></li>
-        </ul>
-    </nav>
-    <header class="sos">
-        <h1>Funcional Soccer Performance</h1>
-        <h2>Para jovens atletas amadores.</h2>
 
-    </header>
-    <div class="container">
-    
+    <div class="container" id="tela">
         <a class="links" id="paracadastro"></a>
         <a class="links" id="paralogin"></a>
 
         <div class="content">
             <!--FORMULÁRIO DE LOGIN-->
             <div id="login">
-              
-                <form method="post" action="">
+                <form method="POST" name="form">
                     <h1>Login</h1>
-                    <br/>
-                    <label>E-mail</label><br/>
-                    <input id="email_log" name="email" type="text" placeholder="Email" /><br/>
+                    <p>
+                        <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
+                    </p>
+                    <p>
+                        <input id="senha" name="senha" required="required" type="password" placeholder="senha" />
+                    </p>
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
 
-                    <label>Senha</label><br/>
-                    <input id="senha_log" name="senha_login" type="password" placeholder="Senha" />
-                    <input type="checkbox" nome="show" onclick="showsenha()" />
-                    <label for="show">mostrar senha</label><br><br/><br/>
+                    <p>
+                        <a class="btn btn-primary" Id="botao" type="button" ref="#" onclick="acesso()">Entrar</a>
+                    </p>
 
-                    <br/><button type="button" class="botao" onclick="verificar()">log in</button> <br/>
-
-
-                    <br class="link" /> Ainda não tem conta?
-                    <a href="Cadastro.html">Cadastre-se</a>
-                    <br/>
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="Cadastro.html">Cadastre-se</a>
+                        <br><br>
+                        <a href="Index.html">Voltar ao menu inicial</a>
+                    </p>
                 </form>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

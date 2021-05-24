@@ -1,34 +1,41 @@
-div.row{
+div.row {
     background-color: rgb(245, 243, 243);
     margin: 0;
     padding: 0;
 }
-div.cadastro{
+
+div.cadastro {
     background-color: rgb(245, 243, 243);
     margin: 0;
 }
-div.content{
+
+div.content {
     background-color: rgb(245, 243, 243);
     margin: 0;
 }
-aside{
+
+aside {
     background-color: rgb(98, 180, 98);
     padding: 5%;
     margin: 0;
 }
-.sos{
+
+.sos {
     text-align: center;
     margin: 0;
     padding: 8%;
     color: black;
-    text-shadow: 2px 1px  rgb(253, 247, 247);
+    text-shadow: 2px 1px rgb(253, 247, 247);
 }
-.sos h2{
+
+.sos h2 {
     font-weight: normal;
 }
-body h3{
+
+body h3 {
     text-align: center;
 }
+
 body {
     width: 100%;
     max-width: 100%;
@@ -37,73 +44,80 @@ body {
     font-size: 15px;
     line-height: 1.5;
     font-family: "Arial";
-    
-  }
+}
+
 #menu ul li {
     display: inline-block;
-  }
+}
+
 #menu ul li a {
     display: block;
     color: #57b86f;
     padding: 7px 50px;
-
     /* visual do link */
-    background-color:#57b86f;
+    background-color: #57b86f;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    border-bottom:3px solid #549740;
+    border-bottom: 3px solid #549740;
 }
+
 #menu {
     position: sticky;
     top: 0;
 }
+
 #menu ul {
-    margin:0px;
-    background-color:#57b86f;
-    list-style:none;
+    margin: 0px;
+    background-color: #57b86f;
+    list-style: none;
 }
+
 #menu ul li a:hover {
-    background-color:#90c290;
+    background-color: #90c290;
     color: #fcf9fd;
     border-bottom: 1px solid #238f32;
 }
-p{
+
+p {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     margin: 0;
     text-indent: 3em;
-
 }
+
 footer {
     background-color: #589253;
     padding: 5%;
     text-align: center;
 }
-ul{
+
+ul {
     margin-left: 35px;
 }
-
 
 table tr {
     background-color: #589253;
     color: white;
 }
-table tr td a{
+
+table tr td a {
     color: #FFFFFF;
 }
 
 table {
     width: 300px;
-    border:#589253;
+    border: #589253;
 }
-table tr td a{
+
+table tr td a {
     color: #FFFFFF;
 }
+
 
 /* Sobre */
 
 div.conteiner-fluid {
-    margin:0;
+    margin: 0;
     padding: 0%;
 }
 
@@ -117,6 +131,26 @@ div.conteiner-fluid {
     height: 600px;
 }
 
-div.carouselExampleControls{
+div.carouselExampleControls {
     margin: 0;
+}
+
+
+/* Fale Conosco */
+
+#corpo {
+    background-image: url(futfale.jpg);
+    padding: 0;
+}
+
+#corLetra {
+    color: rgb(255, 255, 255);
+}
+
+#corEnviar {
+    color: black;
+}
+
+textarea {
+    color: black;
 }
